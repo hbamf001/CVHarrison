@@ -1,0 +1,284 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.backgroundWhite
+{
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+}
+
+.backgroundGrad1
+{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, #f7a429 0%, #f1762e 100%);
+}
+
+.backgroundGrad2
+{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, #f1762e 0%, #f7a429 100%);
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+    height: 100%;
+}
+
+.textWrap {
+    float: left;
+    margin: 25px;
+}
+
+@keyframes play120 {
+    0% {
+      background-position: 0px 0px;
+    }
+    100% {
+      background-position: -2880px 0px;
+    }
+}
+
+.shapeshifter {
+    animation-duration: 2000ms;
+    animation-timing-function: steps(120);
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+}
+
+.shapeshifter .play {
+    animation-name: play120;
+}
+
+/*------------------- NAV BAR -------------------*/
+
+.nav {
+    height: 30; 
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 99;
+}
+
+.nav ul {
+    background: #FFFFFF;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    /* position:fixed; */
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav li a, dropbtn {
+    color: #f1762e;
+    display: block;
+    padding: 5px 35px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav li a:hover, .dropdown:hover .dropbtn{
+    background: #f1762e;
+    color: #FFFFFF;
+    transition: color 0.2s;
+    transition: background 0.8s;
+}
+
+.nav li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    background: #f1762e;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.nav .dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.nav .dropdown-content a:hover {
+    color: rgb(243, 122, 23);
+    background: #ffffff;
+}
+
+.nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*------------------- HEADER -------------------*/
+
+.header {
+    background: linear-gradient(to bottom, #f1762e 0%, #f7a429 100%);
+    width: 100%;
+    height: auto + 50;
+    text-align: center;
+    position: static;
+    margin-top: 10px;
+    z-index: 0;
+}
+
+.header h1 {
+    color: #ffffff;
+    font-size: 120px;
+    margin: 0;
+    letter-spacing: 12px;
+    text-transform: uppercase; 
+    z-index: -1;
+}
+
+.header p {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 8px;
+    margin: 0;
+    text-transform: uppercase; 
+    position: static;
+    top: 0px;
+    text-align: center;
+}
+
+/*------------------- CONTENT -------------------*/
+
+.content {
+    min-width: 200px;
+    max-width: 1200px;
+    height: auto;
+    display: inline-block;
+    position: static;  
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+    font-size:18px;
+    margin:10px;
+}
+
+/*------------------- ABOUT ME -------------------*/
+
+.aboutme {
+    color: #777777;
+}
+
+.aboutme h2 {
+    border-top: 5px dotted #f1762e;
+    border-bottom: 5px dotted #f1762e;
+} 
+
+/*------------------- PROJECTS -------------------*/
+
+.projects {
+    color: #ffffff;
+}
+
+/*------------------- SONIFY KINETIC MOTION -------------------*/
+
+.sonifykinetic {
+    width: 100%;
+    height: auto;
+}
+
+.sonifykinetic h2 {
+    color: #ffffff;
+    border-top: 5px dotted #FFFFFF;
+    border-bottom: 5px dotted #FFFFFF;
+}
+
+.sonifykinetic p {
+    color: #ffffff;
+    font-weight: 700px;
+}
+
+/*------------------- VISUAL EFFECTS RACK -------------------*/
+
+.justjam {
+    color: #777777;
+    width: 100%;
+    height: auto;
+}
+
+.justjam h2 {
+    color: #777777;
+    border-top: 5px dotted #f1762e;
+    border-bottom: 5px dotted #f1762e;
+}
+
+.justjam p{
+    color: #777777;
+}
+
+/*--------------------- AV MINIPROJECTS ---------------------*/
+
+.avprojects {
+    color:#FFFFFF;
+    width: 100%;
+    height: auto;
+}
+
+.avprojects h2{
+    color: #ffffff;
+    border-top: 5px dotted #ffffff;
+    border-bottom: 5px dotted #ffffff;
+}
+
+.avprojects p{
+    color: #ffffff;
+}
+
+/*--------------------------- CV --------------------------*/
+
+.hbcv h2 {
+    color: #777777;
+    border-top: 5px dotted #f1762e;
+    border-bottom: 5px dotted #f1762e;
+}
+
+/*------------------------ CONTACT ------------------------*/
+
+.contactme h2 {
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
